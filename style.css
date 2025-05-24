@@ -1,0 +1,4194 @@
+@import url('https://fonts.googleapis.com/css2?family=Advent+Pro:wght@100;200;300;400;500;600;700&family=Dancing+Script:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Advent+Pro:wght@100;200;300;400;500;600;700&family=Dancing+Script:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Advent+Pro:wght@300&family=Dancing+Script&family=Poppins:ital,wght@0,300;1,300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Advent+Pro:wght@300&family=Dancing+Script&family=Playfair+Display:ital,wght@0,400;0,500;1,400&family=Poppins:ital,wght@0,300;1,300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Gowun+Batang:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playpen+Sans:wght@100..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playwrite+DE+Grund:wght@100..400&display=swap');
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h2 {
+    font-family: "Gowun Batang", serif;
+    font-weight: 400;
+    font-style: normal;
+    text-align: center;
+    color: #000;
+    font-size: 4em;
+    margin: 50px 0px 30px 0px;
+    padding-top: 100px;
+
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: #000;
+}
+
+
+
+/******************* HEADER ******************/
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    overflow: hidden;
+    height: 110px;
+    background-color: #fff;
+    z-index: 100;
+    
+}
+
+header nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 1rem 2rem;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+
+
+}
+
+
+#logo {
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    margin-top: -50px;
+    /* margin: -30px auto 1px auto; */
+    /* margin: -120px auto 1px auto; */
+
+}
+
+#logo img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+}
+
+nav .left, 
+nav .right {
+    flex: 1;
+}
+
+nav .left ul, nav .right ul {
+    display: flex;
+    gap: 2rem;
+    /* background-color: #218838; */
+}
+
+nav .left ul {
+    display: flex;
+    justify-content: flex-start;
+    margin-left: 50px;
+}
+
+nav .right ul {
+    display: flex;
+    justify-content: flex-end;
+    margin-left: 40px;
+}
+
+nav ul li a {
+    font-family: "Cormorant Garamond", serif;
+    color: #000;
+    font: 800;
+    font-size: 1.2em;
+    padding: 8px;
+    margin: 4px;
+    transition: color 0.3s ease;
+}
+
+
+ 
+/* nav ul {
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    margin: auto;
+    padding: 6px 0px;
+    margin-top: -90px;
+    background-color: rebeccapurple;
+} */
+
+
+/* .left {
+    display: flex;
+    justify-content: flex-start;
+    margin-right: 75px;
+}
+
+.right {
+    display: flex;
+    justify-content: flex-end;
+    margin-left: 105px;
+} */
+
+
+/* Change the color of links on hover */
+/* nav ul li a:hover {
+    background-color: #f4c4a0;
+    color: #fff;
+}  */
+  
+/* Add a color to the active/current link */
+/* nav ul li a.active {
+    background-color: #f4c4a0;
+    color: #fff;
+} */
+
+
+.bx-user-circle {
+    font-size: 0.95em;
+    font-size: 1.2em;
+    padding: 0px 4px;
+}
+
+.menu-burger {
+    display: none;
+    /* display: block; */
+    /* margin: 24px 6px 1px 22px; */
+    /* margin: 24px 6px 1px 2px; */
+
+}
+
+.bx-menu {
+    font-size: 3.5em;
+    color: #000;
+}
+
+
+
+
+.hamburger {
+    display: none;
+    cursor: pointer;
+}
+
+.bar {
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    transition: all 0.3s ease;
+    background-color: #333;
+}
+
+
+
+
+/************** PARTIE PRINCIPALE ***********/
+
+.principale {
+    margin-top: 105px;
+    background: url(/images/GradiNo_Proposal.jpg) no-repeat fixed 50% 33%;
+    background-size: cover;
+    height: 769px;
+}
+
+.principale p {
+    font-family: 'Dancing Script', cursive;
+    text-align: center;
+    font-size: 4em;
+    color: #fff;
+    padding-top: 75px;
+}
+
+.saveDate {
+    display: flex;
+    justify-content: center;
+    background-color: #fff;
+    width: 350px;
+    margin: auto;
+    border-radius: 38px;
+}
+
+.saveDate p {
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    color: #000;
+    font-size: 0.9em;
+    margin: 10px 12px;
+    padding: 0;
+}
+
+
+.saveDate p span {
+    display: block;
+    width: 120px;
+}
+
+
+.saveDate .traitVertical {
+    height: 50px;
+    width: 1px;
+    background-color: #000;
+    margin: 18px;
+}
+
+
+#countdown {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    padding: 20px;
+    margin-top: 50px;
+}
+
+
+.timer {
+    width: 100px;
+    padding: 20px;
+    text-align: center;
+}
+
+.value {
+    display: block;
+    font-weight: 700;
+    font-size: 1.5em;
+    color: #fff;
+    border-radius: 18px;
+    padding: 8px;
+}
+
+
+.label {
+    display: block;
+    text-transform: uppercase;
+    font-size: 0.9em;
+    text-align: center;
+    padding-top: 6px;
+    color: #fff;
+}
+
+
+/**************** NOTRE HISTOIRE *****************/
+
+.histoire {
+    display: flex;
+    justify-content: space-around;
+}
+
+.story {
+    display: flex;
+    flex-direction: column;
+    width: 580px;
+    z-index: -1;
+}
+
+.imageStory {
+    width: 620px;
+    margin: 30px;
+    margin-top: 20px;
+    border-radius: 1080px 1080px 0% 0%;
+    
+    transition: opacity 3s ease-out, transform 3s ease-out;
+    opacity: 0;
+    transform: translateX(-130px);
+}
+
+img {
+    width: 100%;
+    height: 100%;
+    border-radius: 1080px 1080px 0% 0%;
+}
+
+.imageStory.montrer {
+    opacity: 1;
+    transform: translateX(0);
+
+}
+
+.notrehistoire {
+    font-family: "Cormorant Garamond", serif;
+    /* font-family: 'Dancing Script', cursive; */
+    font-weight: 300;
+    font-style: normal;
+    text-align: left;
+    color: black;
+    margin: 20px;
+    margin-top: 170px;
+    padding: 6px;
+    padding-left: 12px;
+    font-size: 2em;
+    color: #fff;
+}
+
+/* faire des lignes plus stylés */
+hr {
+    margin: auto;
+    width: 25%;
+}
+
+
+
+/* .container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 60px;
+    z-index: -1;
+  } */
+
+  
+  
+  .box {
+    /* font-family: 'Dancing Script', cursive; */
+    font-family: "Cormorant Garamond", serif;
+    font-weight: 300;
+    font-style: normal;
+    color: #000;
+    padding: 4px;
+    font-size: 1.8em;
+    transition: opacity 3s ease-out, transform 3s ease-out;
+    opacity: 0;
+    transform: translateY(30px);
+    position: relative;
+    z-index: -1;
+  }
+
+  
+  .box.visible {
+    opacity: 1;
+    transform: translateY(0);
+    position: relative;
+    z-index: -1;
+  }
+
+
+
+
+/* .imageStory img:hover {
+    opacity: 0.9;
+    transform: scale(1.0);
+    transition: 0.8s ease-in-out;
+    
+} */
+
+
+/* .story h2 {
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    color: #000;
+    font-size: 3em;
+    margin-top: 250px;
+    margin-bottom: 36px;
+} */
+
+/* @keyframes animated {
+    from {background-color: red;}
+    to {background-color: green;}
+} */
+
+/* @keyframes animated {
+    from {height: 0px; opacity: 0;}
+    to {height: 70px; opacity: 1;}
+} */
+
+
+
+
+
+/************** INVITATION ET SONDAGE ***********/
+
+#sondage h2 {
+    margin: 30px 0px 40px 0px;
+}
+
+.sondages {
+    background: url(/images/GradiNo_Proposal_bis.jpg) no-repeat fixed 50% 33%;
+    height: 460px;
+    background-size: cover;
+    margin: 0px auto 80px auto;
+    padding: 20px;
+}
+
+.invitation {
+    font-family: "Playwrite DE Grund", cursive;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    color: #fff;
+    font-size: 3em;
+    text-align: center;
+    padding: 80px 0px 10px 0px;
+}
+
+.questionnaire a {
+    display: block;
+    width: 210px;
+    margin: 6px auto;
+    padding: 15px ;
+    border: none;
+    border-radius: 28px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.2em;
+    text-align: center;
+    background-color: #fff;
+}
+
+
+.questionnaire a:hover {
+    opacity: 0.8;
+    transition: 0.3s ease-in-out;
+    background-color: #f1d533;
+}
+
+
+
+
+
+/****************** PROGRAMME **********************/
+
+#programme-title {
+    margin: 30px 0px 15px 0px;
+}
+
+.details {
+    font-family: "Playwrite DE Grund", cursive;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    color: #000;
+    font-size: 1.5em;
+    text-align: center;
+    padding: 10px;
+    margin-bottom: 10px;
+    transition: opacity 2s ease-out, transform 2s ease-out;
+    opacity: 0;
+    transform: translateY(50px);
+}
+
+.details.visibles {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.programme {
+    display: flex;
+    align-items: center;
+    background-color: rgb(244, 243, 243);
+    height: 300px;
+    
+}
+
+.programme .bx-low-vision {
+    display: block;
+    font-size: 4em;
+    color: #000;
+    text-align: center;
+    margin: auto;
+    padding: 35px;
+    
+}
+
+.programme .bx-low-vision:hover {
+    opacity: 0.2;
+    scale: 1;
+}
+
+
+
+
+
+/* .titreProgramme {
+    font-family: "Gowun Batang", serif;
+    font-weight: 400;
+    font-style: normal;
+    text-align: center;
+    color: #000;
+    font-size: 3em;
+    margin: 10px 0px 20px 0px;
+}
+
+.programmes {
+    display: flex;
+    background-color: rgb(234, 204, 204);
+    
+} */
+
+/* .programmes .imageProgramme { */
+    /* width: 628.5px; */
+    /* width: 850px;
+    height: 830px;
+
+}
+
+
+.programmes .imageProgramme img {
+    width: 100%;
+} */
+
+/* .container { */
+    /* width: 350px;
+    height: 480px;
+    margin: 0px 25px; */
+    /* margin: auto; */
+    /* padding: 270px 30px; */  
+/* } */
+
+
+
+/* .programme .detailsProgramme {
+  
+    margin: 50px 0px;
+} */
+
+
+/* .programmes .detailsProgramme p {
+    text-align: center;
+    font-size: 1.5em; */
+    /* margin: 30px 0px; */
+    /* padding: 18px;
+
+} */
+
+
+
+
+/* .programmeTop {
+    text-align: center;
+    margin-top: 180px;
+}
+
+.programmeBottom {
+    text-align: center;
+    margin-bottom: 290px;
+} */
+
+
+/* #details {
+    margin: 50px 0px;
+} */
+
+
+
+
+
+/******************** DETAILS  ****************/
+
+
+
+
+/****************** TIMELINE SECTION ******************/
+
+#timeline-section {
+    padding: 50px 0;
+    background-color: #fff;
+}
+
+.timeline {
+    position: relative;
+    max-width: 600px;
+    margin: 40px auto;
+    padding: 20px;
+}
+
+/* Ligne verticale */
+.timeline::after {
+    content: '';
+    width: 2px;
+    /* background-color: #f4c4a0; */
+    background-color: #000;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    margin-left: -1px;
+    z-index: 5;
+    /* z-index: 2; */
+}
+
+.timeline-item {
+    position: relative;
+    margin: 40px 0;
+    z-index: 5;
+    /* z-index: -1; */
+}
+
+/* Points sur la timeline */
+.timeline-dot {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    /* background-color: #f4c4a0; */
+    background-color: #000;
+    border: 3px solid #fff;
+    /* border: 4px solid #000; */
+    border-radius: 50%;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-top: 30px;
+    z-index: 3;
+    /* z-index: -1; */
+}
+
+/* Contenu de chaque point */
+.timeline-content {
+    position: relative;
+    width: 45%;
+    padding: 20px;
+    /* padding: 15px; */
+    /* padding: 3px;
+    margin: 20px 0; */
+    background-color: #fff;
+    /* background-color: #007bff; */
+    /* border-radius: 8px; */
+    /* box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); */
+    /* z-index: -1; */
+}
+
+/* Positionnement alterné du contenu */
+.timeline-item:nth-child(odd) .timeline-content {
+    text-align: right;
+}
+
+.timeline-item:nth-child(even) .timeline-content {
+    left: 55%;
+}
+
+
+.timeline-content h3 {
+    font-family: "Cormorant Garamond", serif;
+    font-family: 'Poppins', sans-serif;
+    font-family: 'Dancing Script', cursive;
+    /* color: #f4c4a0; */
+    color: #000;
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+
+
+.timeline-content p {
+    font-family: "Cormorant Garamond", serif;
+    font-family: 'Poppins', sans-serif;
+    font-family: "Playwrite DE Grund", cursive;
+    font-size: 1em;
+    /* color: #333; */
+    color: #000;
+}
+
+/* Responsive design pour la timeline */
+/* @media screen and (max-width: 900px) {
+    .timeline::after {
+        left: 31px;
+    }
+
+    .timeline-item {
+        margin: 60px 0;
+    }
+
+    .timeline-dot {
+        left: 31px;
+        transform: none;
+    }
+
+    .timeline-content {
+        width: calc(100% - 80px);
+        margin-left: 80px;
+    }
+
+    .timeline-item:nth-child(odd) .timeline-content,
+    .timeline-item:nth-child(even) .timeline-content {
+        left: 0;
+        text-align: left;
+    }
+}*/
+
+
+/* ***************** FAQ  *************** */
+.faq-title {
+    margin: 60px 0px 20px 0px;
+}
+
+
+.quizz {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.questions {
+    padding: 5px;
+    margin: 10px;
+    width: 750px;
+}
+
+
+.questions h3 {
+    font-size: 1.5em;
+    text-align: center;
+    margin: auto;
+    padding: 8px;
+}
+
+.panel {
+    text-align: center;
+    font-size: 1.1em;
+}
+
+/****** LIGNE ET MESSAGE ******/
+
+.ligne {
+    width: 25%;
+    height: 2px;
+    margin: 70px auto;
+    border-radius: 195px;
+    background-color: #000
+}
+
+.seeyou {
+    /* width: 550px; */
+    margin-top: 30px;
+    background: url('/images/GradiNo_Proposal_devant.jpg') repeat 50% 50%;
+    background: url('/images/alliances.jpg') repeat 50% 50%;
+    background: url('/images/GradiNo_Proposal.jpg') repeat 50% 37%;
+    background-size: cover;
+    height: 450px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.bye1 {
+    font-family: 'Dancing Script', cursive;
+    font-size: 2.1em;
+    text-align: center;
+    padding: 125px 3px 15px 3px;
+    color: #fff;
+
+}
+
+.bye2 {
+    font-family: 'Dancing Script', cursive;
+    font-size: 1.9em;
+    text-align: center;
+    padding: 5px;
+    color: #fff;
+}
+
+
+/******* ITINERAIRE & LOGEMENT ********/
+
+.guides {
+    text-align: center;
+    margin-top: 170px;
+}
+
+
+.voyage {
+    display: flex;
+    justify-content: space-around;
+    
+    
+}
+
+.voyage .bx {
+    display: block;
+    font-size: 3em;
+    text-align: center;
+    padding: 8px;
+    /* color: palevioletred; */
+}
+
+.bxs-hotel {
+    display: block;
+    font-size: 6em;
+    text-align: center;
+    padding: 12px;
+    margin-bottom: 12px;
+}
+
+.voyage h3 {
+    font-size: 1.5em;
+    text-align: center;
+    padding: 8px;
+}
+
+.voyage p {
+    font-size: 1em;
+    text-align: center;
+    padding: 12px;
+}
+
+.voyage .transport {
+    width: 350px;
+    height: 250px;
+    margin-bottom: 10px;
+    /* background-color: rgb(192, 161, 161); */
+    border-radius: 32px;
+    padding: 22px;
+}
+
+
+.voyage .buttonQueFaire {
+    display: block;
+    width: 150px;
+    margin: 8px auto;
+    padding: 8px;
+    background-color: rgba(4, 62, 38, 0.6);
+}
+
+.voyage .buttonQueFaire a {
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    font-size: 0.7em;
+    color: #fff;
+}
+
+
+
+.infos {
+    font-size: 1.4em;
+    text-align: center;
+    padding: 16px 10px;
+    margin: 42px 0px;
+    background-color: rgba(4, 62, 38, 0.2) ;
+}
+
+
+
+
+.infos a {
+    display: block;
+    font-size: 1em;
+    text-align: center;
+    width: 230px;
+    padding: 14px;
+    margin: 12px auto 4px auto;
+    background-color: rgba(4, 62, 38, 0.2);
+    background-color: #fff;
+    border-radius: 26px;
+}
+
+
+
+.accomodation .imagesQueFaire {
+    width: 280px;
+    height: 250px;
+}
+
+.accomodation .imagesQueFaire img {
+    width: 100%;
+} 
+
+
+
+.activites .imagesQueFaire {
+    width: 280px;
+    height: 250px;
+}
+
+.activites .imagesQueFaire img {
+    width: 100%;
+} 
+
+.activites {
+    margin-bottom: 80px;
+}
+
+
+/******* QUE FAIRE ********/
+
+.voyage {
+    display: flex;
+    justify-content: space-around;
+    
+}
+
+/* .quefaire {
+    text-align: center;
+    margin-top: 170px;
+} */
+
+/* .container {
+    background-color: #7fb37e;
+} */
+
+/* .container h3 {
+    font-size: 1.5em;
+    text-align: center;
+    padding: 12px;
+} */
+
+/* 
+.imagesQueFaire {
+    width: 280px;
+    height: 250px;
+}
+
+
+.imagesQueFaire img {
+    width: 100%;
+} */
+
+/* 
+.buttonQueFaire {
+    width: 170px;
+    margin: 12px 68px;
+    background-color: rgba(4, 62, 38, 0.6);
+}
+
+.buttonQueFaire a {
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    font-size: 0.8em;
+    color: #fff;
+} */
+
+
+
+/************* CONNEXION ************/
+
+.login-container {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    width: 300px;
+}
+
+.login-form h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    color: #555;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #218838;
+}
+
+.error-message {
+    color: red;
+    margin-top: 10px;
+    text-align: center;
+    display: none; /* Caché par défaut */
+}
+
+
+
+
+/*****************FOOTER*************/
+
+footer {
+    margin-top: 110px;
+    padding-top: 20px;
+    background-color: rgb(235, 229, 229);
+    background-color: rgb(244, 243, 243);
+}
+
+
+footer form {
+    display: flex;
+    flex-direction: column;
+    width: 450px;
+    margin: auto;
+}
+
+label {
+    font-size: 1.2em;
+    padding: 12px 2px;
+}
+
+.input-field {
+    margin-bottom: 22px;
+}
+
+
+input, textarea, button {
+    border: none;
+    width: 95%;
+    padding: 10px 6px;
+    margin: 2px 0;
+    font-size: 1.2em;
+    border-radius: 8px;
+}
+
+textarea {
+    height: 180px;
+}
+
+
+button {
+    width: 95%;
+    margin: auto;
+    font-size: 1.5em;
+    border: 20%;
+    color: #000;
+    background-color: rgb(244, 234, 234);
+}
+
+
+
+button:hover {
+    background-color: #cfed4c;
+    color: #fffae1;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+}
+
+#deuxiemeTrait {
+    height: 1px;
+    width: 50%;
+    background-color: #fffae1;
+    margin: 60px auto;
+}
+
+.termes {
+    display: flex;
+    justify-content: space-around;
+    margin: 18px auto;
+    /* background-color: red; */
+    width: 650px;
+    text-align: center;
+    font-size: 0.9em;
+}
+
+
+/* #copyrightEtIcons {
+    margin-bottom: 20px;
+    padding: 0 10%;
+
+} */
+
+#copyright {
+    /* width: 50%; */
+    /* text-align: left; */
+    color: #000;
+    text-align: center;
+    font-size: 1em;
+}
+
+#icons {
+    width: 50%;
+    text-align: right;
+}
+
+#icons a {
+    display: inline-block;
+    padding: 0 15px;
+    font-size: 1.3em;
+    color: #fffae1;
+}
+
+#icons a:hover {
+    transform: scale(1.5);
+    transition: 0.1s;
+}
+
+/* .conditions {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+} */
+
+.conditions p {
+    padding: 6px;
+    color: #fffae1;
+}
+
+.conditions a {
+    color: #fffae1;
+}
+.conditions a:hover {
+    text-decoration: underline;
+}
+
+
+/******************** CADEAUX *****************/
+
+.gift {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+    /* height: 100vh; */
+    background-color: #f4f4f9;
+    /* margin: 0; */
+}
+
+.payment-container {
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    width: 300px;
+    text-align: center;
+}
+
+.payment-options button {
+    margin: 5px;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: #007bff;
+    color: #fff;
+    font-size: 16px;
+}
+
+.payment-options button:hover {
+    background-color: #0056b3;
+}
+
+.payment-form {
+    margin-top: 20px;
+    display: none;
+}
+
+.hidden {
+    display: none;
+}
+
+.payment-form label {
+    display: block;
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+.payment-form input {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.payment-form button {
+    width: 100%;
+    padding: 10px;
+    background-color: #28a745;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.payment-form button:hover {
+    background-color: #218838;
+}
+
+
+
+/* Add a black background color to the top navigation */
+/* .topnav {
+    background-color: #333;
+    overflow: hidden;
+  } */
+  
+  /* Style the links inside the navigation bar */
+  /* .topnav a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+  } */
+  
+  /* Change the color of links on hover
+  .topnav a:hover {
+    background-color: #ddd;
+    color: black;
+  }
+  
+  /* Add an active class to highlight the current page */
+  /* .topnav a.active {
+    background-color: #04AA6D;
+    color: white;
+  } */
+  
+  /* Hide the link that should open and close the topnav on small screens */
+  /* .topnav .icon {
+    display: none;
+  }  */
+
+
+  /* When the screen is less than 600 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the topnav (.icon) */
+/* @media screen and (max-width: 600px) {
+    .topnav a:not(:first-child) {display: none;}
+    .topnav a.icon {
+      float: right;
+      display: block;
+    }
+  } */
+  
+  
+
+
+
+/*******************  RESPONSIVE ************************/
+
+
+/*******************   MOBILE   *********************/
+
+
+
+/****** NAVBAR ******/
+
+/*@media screen and (max-width:450px) {
+
+    h2 {
+        font-size: 2em;
+        margin: 30px 0px 20px 0px;
+    }
+
+    header {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        overflow: hidden;
+        height: 85px;
+        background-color: #fff;
+        z-index: 100;
+    }
+
+
+    #logo {
+        width: 120px;
+        height: 120px;
+        border-radius: 50%;
+        margin: -25px auto 1px auto;
+    }
+    
+    #logo img {
+        width: 100%;
+        height: 100%;
+        border-radius: 50%;
+    }
+
+    nav .left,
+    nav .right {
+        position: fixed;
+        left: -100%;
+        top: 25px;
+        gap: 0;
+        display: flex;
+        flex-direction: column;
+        background-color: #fff;
+        width: 35%;
+        height: 100%;
+        text-align: center;
+        transition: 0.3s;
+    }
+
+    nav .left ul, 
+    nav .right ul {
+        display: flex;
+        flex-direction: column;
+        gap: 0;
+    }
+    
+    nav .left ul {
+        display: flex;
+        justify-content: center;
+        margin-left: 0px;
+    }
+    
+    nav .right ul {
+        display: flex;
+        justify-content: center;
+        margin-left: 0px;
+    }
+
+    .left ul li, .right ul li {
+        padding: 8px 0;
+
+    }
+
+    .left ul li a, .right ul li a {
+        padding: 8px 0;
+        border-bottom: 1px solid goldenrod;
+    }
+
+
+    nav .left {
+        top: 25px;
+    }
+
+    nav .right {
+        top: 185px;
+    }
+
+    nav .left.active, nav .right.active {
+        left: 0px;
+    }
+
+
+    .hamburger {
+        display: block;
+        margin-top: -36px;
+        padding: 8px;
+    }
+
+    .hamburger.active .bar:nth-child(2) {
+        opacity: 0;
+    }
+
+    .hamburger.active .bar:nth-child(1) {
+        transform: translateY(8px) rotate(45deg);
+    }
+
+    .hamburger.active .bar:nth-child(3) {
+        transform: translateY(-8px) rotate(-45deg);
+    }
+
+*/
+
+
+/*************** PARTIE PRINCIPALE *************/
+
+/*    .principale {
+        background: url(/images/GradiNo_Proposal.jpg) no-repeat fixed 50% 50%;
+        background-size: cover;
+        height: 699px;
+        width: 310px;
+        margin: auto;
+    }
+
+    .principale p {
+        font-family: 'Dancing Script', cursive;
+        text-align: center;
+        font-size: 3em;
+        color: #fff;
+        padding-top: 150px;
+    }
+
+    .saveDate {
+        display: flex;
+        justify-content: center;
+        background-color: #fff;
+        width: 270px;
+        margin: auto;
+        border-radius: 32px;
+    }
+
+    .saveDate p {
+        font-family: 'Poppins', sans-serif;
+        text-align: center;
+        color: #000;
+        font-size: 0.9em;
+        margin: 10px 12px;
+        padding: 0;
+    }
+
+    .saveDate p span {
+        display: block;
+        width: 90px;
+    }
+
+    .saveDate .traitVertical {
+        height: 50px;
+        width: 1px;
+        background-color: #000;
+        margin: 18px;
+    }
+
+    #countdown {
+        display: flex;
+        justify-content: center;
+        margin-top: 50px;
+        width: 290px;
+        padding: 10px;
+        gap: 5px;
+    
+    }
+
+    .timer {
+        width: 75px;
+        padding: 20px;
+        text-align: center;
+    }
+
+
+    .value {
+        display: block;
+        font-weight: 700;
+        font-size: 1.2em;
+        padding: 2px;
+        color: #fff;
+        border-radius: 18px;
+    }
+
+    .label {
+        display: block;
+        text-transform: uppercase;
+        font-size: 0.7em;
+        text-align: center;
+        padding-top: 6px;
+        color: #fff;
+    }
+*/
+
+    /*********** Notre histoire **********/
+
+    
+  /*  .histoire {
+        display: flex;
+        flex-direction: column;
+    
+    }
+
+    .imageStory {
+        width: 310px;
+        margin: 10px auto;
+    }
+
+    img {
+        width: 100%;
+        height: 100%;
+    }
+    
+    .story {
+        width: 310px;
+        margin: auto;
+        font-size: 0.60em;
+        text-align: center;
+        font-family: "Cormorant Garamond", serif;
+        font-weight: 300;
+        font-style: normal;
+        color: black;
+        position: relative;
+        z-index: 5;
+    }
+    
+    .notrehistoire {
+        margin: 15px 5px;
+        position: relative;
+        z-index: 5;
+    }
+
+
+*/
+    /*********** INVITATION ET SONDAGE *********/
+
+  /*  .sondages {
+        background: url(/images/GradiNo_Proposal_bis.jpg) no-repeat fixed 50% 50%;
+        height: 260px;
+        background-size: cover;
+        margin: 0px auto 40px auto;
+        padding: 10px;
+    }
+
+
+
+    .invitation {
+        font-family: "Playwrite DE Grund", cursive;
+        font-optical-sizing: auto;
+        font-weight: 400;
+        font-style: normal;
+        color: #fff;
+        font-size: 1.2em;
+        text-align: center;
+        padding: 80px 0px 10px 0px;
+    }
+
+
+    .questionnaire a {
+        display: block;
+        width: 130px;
+        border-radius: 28px;
+        font-size: 0.8em;
+    }
+
+
+*/
+/****************** PROGRAMME **********************/
+
+/*
+.details {
+    font-family: "Playwrite DE Grund", cursive;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    color: #000;
+    font-size: 0.9em;
+    text-align: center;
+    padding: 6px;
+    margin-bottom: 10px;
+}
+
+.programme {
+    display: flex;
+    align-items: center;
+    background-color: rgb(244, 243, 243);
+    height: 300px;
+
+}
+
+
+.programme .bx-low-vision {
+    display: block;
+    font-size: 4em;
+    color: #000;   
+    
+}
+
+.programme .bx-low-vision:hover {
+    opacity: 0.2;
+    scale: 1;
+}
+
+
+
+/*
+.programme .imageProgramme {
+    width: 628.5px;
+    height: 830px;
+
+}
+
+.programme .imageProgramme img {
+    width: 100%;
+}
+
+.container {
+    width: 350px;
+    height: 480px;
+    margin: 0px 25px;
+    margin: auto;
+    padding: 270px 30px; 
+    
+}
+
+
+
+/* .programme .detailsProgramme {
+  
+    margin: 50px 0px;
+} */
+
+
+/* .programme .detailsProgramme p {
+    text-align: center;
+    font-size: 1.5em;
+    margin: 30px 0px;
+    padding: 18px;
+
+} */
+
+/* .titreProgramme {
+    font-family: "Gowun Batang", serif;
+    font-weight: 400;
+    font-style: normal;
+    text-align: center;
+    color: #000;
+    font-size: 3em;
+    margin: 10px 0px 20px 0px;
+} */
+
+
+/* .programmeTop {
+    text-align: center;
+    margin-top: 180px;
+}
+
+.programmeBottom {
+    text-align: center;
+    margin-bottom: 290px;
+} */
+
+
+/* #details {
+    margin: 50px 0px;
+} */
+
+
+
+
+
+
+/* TIMELINE */
+
+/****************** TIMELINE SECTION ******************/
+/*
+#timeline-section {
+    padding: 50px 0;
+    background-color: #fff;
+}
+
+.timeline {
+    position: relative;
+    max-width: 400px;
+    margin: 40px auto;
+    padding: 20px;
+    /* background-color: #007bff; */
+/*}
+
+/* Ligne verticale */
+/*.timeline::after {
+    content: '';
+    width: 2px;
+    /* background-color: #f4c4a0; */
+ /*   background-color: #000;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    margin-left: -1px;
+    z-index: 5;
+    /* z-index: 2; */
+/*}
+
+.timeline-item {
+    position: relative;
+    margin: 40px 0;
+    z-index: 5;
+    /* z-index: -1; */
+/*}
+
+/* Points sur la timeline */
+/*.timeline-dot {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    /* background-color: #f4c4a0; */
+  /*  background-color: #000;
+    border: 3px solid #fff;
+    /* border: 4px solid #000; */
+    /*border-radius: 50%;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-top: 30px;
+    z-index: 3;
+    /* z-index: -1; */
+/*}
+
+/* Contenu de chaque point */
+/*.timeline-content {
+    position: relative;
+    width: 45%;
+    padding: 20px;
+    /* padding: 15px; */
+    /* padding: 3px;
+    margin: 20px 0; */
+  /*  background-color: #fff;
+    /* background-color: #007bff; */
+    /* border-radius: 8px; */
+    /* box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); */
+    /* z-index: -1; */
+/*}
+
+/* Positionnement alterné du contenu */
+/*.timeline-item:nth-child(odd) .timeline-content {
+    text-align: right;
+    left: -22%;
+}
+
+.timeline-item:nth-child(even) .timeline-content {
+    left: 35%;
+}
+
+
+.timeline-content h3 {
+    font-family: "Cormorant Garamond", serif;
+    font-family: 'Poppins', sans-serif;
+    font-family: 'Dancing Script', cursive;
+    /* color: #f4c4a0; */
+  /*  color: #000;
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+
+
+.timeline-content p {
+    font-family: "Cormorant Garamond", serif;
+    font-family: 'Poppins', sans-serif;
+    font-family: "Playwrite DE Grund", cursive;
+    font-size: 1em;
+    /* color: #333; */
+    /*color: #000;
+}
+
+/* Responsive design pour la timeline */
+/* @media screen and (max-width: 900px) {
+    .timeline::after {
+        left: 31px;
+    }
+
+    .timeline-item {
+        margin: 60px 0;
+    }
+
+    .timeline-dot {
+        left: 31px;
+        transform: none;
+    }
+
+    .timeline-content {
+        width: calc(100% - 80px);
+        margin-left: 80px;
+    }
+
+    .timeline-item:nth-child(odd) .timeline-content,
+    .timeline-item:nth-child(even) .timeline-content {
+        left: 0;
+        text-align: left;
+    }
+} */
+
+
+
+/******* QUE FAIRE ********/
+
+/* .voyage {
+    display: flex;
+    justify-content: space-around;
+    
+} */
+
+/* .quefaire {
+    text-align: center;
+    margin-top: 170px;
+} */
+
+/* .container {
+    background-color: #7fb37e;
+} */
+
+/* .container h3 {
+    font-size: 1.5em;
+    text-align: center;
+    padding: 12px;
+} */
+
+/* 
+.imagesQueFaire {
+    width: 280px;
+    height: 250px;
+}
+
+
+.imagesQueFaire img {
+    width: 100%;
+} */
+
+/* 
+.buttonQueFaire {
+    width: 170px;
+    margin: 12px 68px;
+    background-color: rgba(4, 62, 38, 0.6);
+}
+
+.buttonQueFaire a {
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    font-size: 0.8em;
+    color: #fff;
+} */
+
+
+
+
+
+    /******** ITINERAIRE & LOGEMENT ********/
+
+    /* .voyage {
+        display: flex;
+        flex-direction: column;
+        margin: 12px auto;
+    }
+    
+    .voyage .bx {
+        display: block;
+        font-size: 3em;
+        text-align: center;
+        padding: 8px;
+        margin-top: 30px;
+    }
+
+    .voyage h3 {
+        font-size: 1.5em;
+        text-align: center;
+        padding: 8px;
+    }
+
+    .voyage p {
+        font-size: 1.2em;
+        text-align: center;
+        padding: 18px;
+    }
+     */
+/*      
+    .voyage .imagesQueFaire {
+        width: 420px;
+        height: 280px;
+        margin-bottom: 10px;
+        margin: auto;
+        padding: 0px 18px;
+    }
+
+    .voyage .buttonQueFaire {
+        display: block;
+        width: 150px;
+        margin: 8px auto;
+        padding: 8px;
+        background-color: rgba(4, 62, 38, 0.6);
+    }
+
+    .voyage .buttonQueFaire a {
+        font-family: 'Poppins', sans-serif;
+        text-align: center;
+        font-size: 0.7em;
+        color: #fff;
+    }
+
+    .infos {
+        font-size: 1.2em;
+        text-align: center;
+        padding: 16px 10px;
+        margin: 42px 0px;
+        background-color: rgba(4, 62, 38, 0.2) ;
+    }
+
+    .bxs-hotel {
+        display: block;
+        font-size: 4em;
+        text-align: center;
+        padding: 12px;
+        margin-bottom: 12px;
+    }
+
+    .accomodation .imagesQueFaire {
+        width: 420px;
+        height: 280px;
+        margin-bottom: 20px;
+        margin: 15px auto;
+    }
+
+    .accomodation .imagesQueFaire img {
+        width: 100%;
+    } 
+
+    .activites .imagesQueFaire {
+        width: 420px;
+        height: 280px;
+    }
+    
+    .activites .imagesQueFaire img {
+        width: 100%;
+    } 
+    
+    .activites {
+        margin-bottom: 80px;
+    }
+ */
+
+
+
+/* ***************** FAQ  *************** */
+/*
+.quizz {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 310px;
+
+}
+
+.questions {
+    padding: 5px;
+    margin: 10px;
+    width: 310px;
+}
+
+
+.questions h3 {
+    font-size: 1em;
+    text-align: center;
+    margin: auto;
+    padding: 8px;
+    width: 310px;
+}
+
+.panel {
+    text-align: center;
+    font-size: 0.8em;
+    margin: auto;
+    width: 280px;
+
+
+}
+
+/****** LIGNE ET MESSAGE ******/
+/*
+.ligne {
+    width: 45%;
+    height: 2px;
+    margin: 50px auto;
+    border-radius: 195px;
+    background-color: #000
+}
+
+.seeyou {
+    margin: auto;
+    width: 310px;
+}
+
+.bye {
+    font-family: 'Dancing Script', cursive;
+    font-size: 1.5em;
+    text-align: center;
+    width: 310px;
+}
+
+
+
+
+/**************** FOOTER  **********************/
+/*footer {
+    margin-top: 70px;
+    background-color: rgb(244, 243, 243);
+    padding-top: 12px;
+    width: 310px;
+
+}
+
+.termes {
+    display: flex;
+    justify-content: space-around;
+    margin: 0px auto;
+    margin-top: 10px;
+    padding: 8px 3px;
+    text-align: center;
+    font-size: 0.8em;
+    width: 310px;
+
+}
+
+
+#copyright {
+    width: 310px;
+    color: #000;
+    text-align: center;
+    font-size: 0.8em;
+}
+
+}
+
+
+
+
+/*******************   MOBILE PLUS LARGE  *********************/
+
+
+
+/****** NAVBAR ******/
+
+@media only screen and (max-width:600px) {
+
+    h2 {
+        font-size: 2em;
+        margin: 30px 0px 20px 0px;
+    }
+
+    header {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        overflow: hidden;
+        height: 85px;
+        background-color: #fff;
+        z-index: 100;
+    }
+
+
+    #logo {
+        width: 120px;
+        height: 120px;
+        border-radius: 50%;
+        margin: -25px auto 1px auto;
+    }
+    
+    #logo img {
+        width: 100%;
+        height: 100%;
+        border-radius: 50%;
+    }
+
+    nav .left,
+    nav .right {
+        position: fixed;
+        left: -100%;
+        top: 25px;
+        gap: 0;
+        display: flex;
+        flex-direction: column;
+        background-color: #fff;
+        width: 35%;
+        height: 100%;
+        text-align: center;
+        transition: 0.3s;
+    }
+
+    nav .left ul, 
+    nav .right ul {
+        display: flex;
+        flex-direction: column;
+        gap: 0;
+    }
+    
+    nav .left ul {
+        display: flex;
+        justify-content: center;
+        margin-left: 0px;
+    }
+    
+    nav .right ul {
+        display: flex;
+        justify-content: center;
+        margin-left: 0px;
+    }
+
+    .left ul li, .right ul li {
+        padding: 8px 0;
+
+    }
+
+    .left ul li a, .right ul li a {
+        padding: 8px 0;
+        border-bottom: 1px solid goldenrod;
+    }
+
+
+    nav .left {
+        top: 25px;
+    }
+
+    nav .right {
+        top: 185px;
+    }
+
+    nav .left.active, nav .right.active {
+        left: 0px;
+    }
+
+
+
+    .hamburger {
+        display: block;
+        margin-top: -36px;
+        padding: 8px;
+    }
+
+    .hamburger.active .bar:nth-child(2) {
+        opacity: 0;
+    }
+
+    .hamburger.active .bar:nth-child(1) {
+        transform: translateY(8px) rotate(45deg);
+    }
+
+    .hamburger.active .bar:nth-child(3) {
+        transform: translateY(-8px) rotate(-45deg);
+    }
+
+
+
+
+/*************** PARTIE PRINCIPALE *************/
+
+    .principale {
+        background: url(/images/GradiNo_Proposal.jpg) no-repeat fixed 50% 50%;
+        background-size: cover;
+        height: 699px;
+    }
+
+    .principale p {
+        font-family: 'Dancing Script', cursive;
+        text-align: center;
+        font-size: 3.5em;
+        color: #fff;
+        padding-top: 150px;
+    }
+
+    .saveDate {
+        display: flex;
+        justify-content: center;
+        background-color: #fff;
+        width: 270px;
+        margin: auto;
+        border-radius: 32px;
+    }
+
+    .saveDate p {
+        font-family: 'Poppins', sans-serif;
+        text-align: center;
+        color: #000;
+        font-size: 0.9em;
+        margin: 10px 12px;
+        padding: 0;
+    }
+
+    .saveDate p span {
+        display: block;
+        width: 90px;
+    }
+
+    .saveDate .traitVertical {
+        height: 50px;
+        width: 1px;
+        background-color: #000;
+        margin: 18px;
+    }
+
+    #countdown {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        padding: 20px;
+        /* margin: auto; */
+        margin-top: 50px;
+    
+    }
+
+    .timer {
+        width: 100px;
+        padding: 20px;
+        text-align: center;
+        margin: auto;
+    }
+
+    .value {
+        display: block;
+        font-weight: 700;
+        text-align: center;
+        font-size: 1.2em;
+        padding: 3px;
+        color: #fff;
+        border-radius: 18px;
+        
+    }
+
+    .label {
+        display: block;
+        text-transform: uppercase;
+        font-size: 0.7em;
+        text-align: center;
+        padding: 3px;
+        padding-top: 6px;
+        color: #fff;
+   
+    }
+
+
+    /******** Notre histoire ******/
+
+    
+    .histoire {
+        display: flex;
+        flex-direction: column;    
+    }
+
+    /* .imageStory {
+        width: 410px;
+        margin: 10px auto;
+    } */
+
+    .imageStory {
+        width: 310px;
+        margin: 10px auto;
+    }
+
+    img {
+        width: 100%;
+        height: 100%;
+    }
+    
+    .story {
+        /* width: 410px; */
+        width: 310px;
+        margin: auto;
+        /* font-size: 0.75em; */
+        font-size: 0.58em;
+        text-align: center;
+        font-family: "Cormorant Garamond", serif;
+        font-weight: 300;
+        font-style: normal;
+        color: black;
+        position: relative;
+        z-index: 5;
+    }
+    
+    .notrehistoire {
+        margin: 15px 5px;
+        position: relative;
+        z-index: 5;
+    }
+
+
+
+    /*********** INVITATION ET SONDAGE *********/
+
+    .sondages {
+        background: url(/images/GradiNo_Proposal_bis.jpg) no-repeat fixed 50% 50%;
+        height: 260px;
+        background-size: cover;
+        margin: 0px auto 40px auto;
+        padding: 10px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+
+
+    .invitation {
+        font-family: "Playwrite DE Grund", cursive;
+        font-optical-sizing: auto;
+        font-weight: 400;
+        font-style: normal;
+        color: #fff;
+        font-size: 1.5em;
+        text-align: center;
+        padding: 10px 0px 20px 0px;
+        /* margin: auto; */
+    }
+
+
+    .questionnaire a {
+        display: block;
+        width: 130px;
+        border-radius: 28px;
+        font-size: 0.8em;
+    }
+
+
+
+/****************** PROGRAMME **********************/
+
+
+.details {
+    font-family: "Playwrite DE Grund", cursive;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    color: #000;
+    font-size: 0.9em;
+    text-align: center;
+    padding: 6px;
+    margin-bottom: 10px;
+}
+
+.programme {
+    display: flex;
+    align-items: center;
+    background-color: rgb(244, 243, 243);
+    height: 300px;
+
+}
+
+
+.programme .bx-low-vision {
+    display: block;
+    font-size: 4em;
+    color: #000;   
+    
+}
+
+.programme .bx-low-vision:hover {
+    opacity: 0.2;
+    scale: 1;
+}
+
+
+
+/*
+.programme .imageProgramme {
+    width: 628.5px;
+    height: 830px;
+
+}
+
+.programme .imageProgramme img {
+    width: 100%;
+}
+
+.container {
+    width: 350px;
+    height: 480px;
+    margin: 0px 25px;
+    margin: auto;
+    padding: 270px 30px; 
+    
+}
+
+
+
+/* .programme .detailsProgramme {
+  
+    margin: 50px 0px;
+} */
+
+
+/* .programme .detailsProgramme p {
+    text-align: center;
+    font-size: 1.5em;
+    margin: 30px 0px;
+    padding: 18px;
+
+} */
+
+/* .titreProgramme {
+    font-family: "Gowun Batang", serif;
+    font-weight: 400;
+    font-style: normal;
+    text-align: center;
+    color: #000;
+    font-size: 3em;
+    margin: 10px 0px 20px 0px;
+} */
+
+
+/* .programmeTop {
+    text-align: center;
+    margin-top: 180px;
+}
+
+.programmeBottom {
+    text-align: center;
+    margin-bottom: 290px;
+} */
+
+
+/* #details {
+    margin: 50px 0px;
+} */
+
+
+
+
+
+
+/* TIMELINE */
+
+/****************** TIMELINE SECTION ******************/
+
+#timeline-section {
+    padding: 50px 0;
+    background-color: #fff;
+}
+
+.timeline {
+    position: relative;
+    max-width: 400px;
+    margin: 40px auto;
+    padding: 20px;
+    /* background-color: #007bff; */
+}
+
+/* Ligne verticale */
+.timeline::after {
+    content: '';
+    width: 2px;
+    /* background-color: #f4c4a0; */
+    background-color: #000;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    margin-left: -1px;
+    z-index: 5;
+    /* z-index: 2; */
+}
+
+.timeline-item {
+    position: relative;
+    margin: 40px 0;
+    z-index: 5;
+    /* z-index: -1; */
+}
+
+/* Points sur la timeline */
+.timeline-dot {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    /* background-color: #f4c4a0; */
+    background-color: #000;
+    border: 3px solid #fff;
+    /* border: 4px solid #000; */
+    border-radius: 50%;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-top: 30px;
+    z-index: 3;
+    /* z-index: -1; */
+}
+
+/* Contenu de chaque point */
+.timeline-content {
+    position: relative;
+    width: 45%;
+    padding: 20px;
+    /* padding: 15px; */
+    /* padding: 3px;
+    margin: 20px 0; */
+    background-color: #fff;
+    /* background-color: #007bff; */
+    /* border-radius: 8px; */
+    /* box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); */
+    /* z-index: -1; */
+}
+
+/* Positionnement alterné du contenu */
+.timeline-item:nth-child(odd) .timeline-content {
+    text-align: right;
+    left: -22%;
+}
+
+.timeline-item:nth-child(even) .timeline-content {
+    left: 35%;
+}
+
+
+.timeline-content h3 {
+    font-family: "Cormorant Garamond", serif;
+    font-family: 'Poppins', sans-serif;
+    font-family: 'Dancing Script', cursive;
+    /* color: #f4c4a0; */
+    color: #000;
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+
+
+.timeline-content p {
+    font-family: "Cormorant Garamond", serif;
+    font-family: 'Poppins', sans-serif;
+    font-family: "Playwrite DE Grund", cursive;
+    font-size: 1em;
+    /* color: #333; */
+    color: #000;
+}
+
+/* Responsive design pour la timeline */
+/* @media screen and (max-width: 900px) {
+    .timeline::after {
+        left: 31px;
+    }
+
+    .timeline-item {
+        margin: 60px 0;
+    }
+
+    .timeline-dot {
+        left: 31px;
+        transform: none;
+    }
+
+    .timeline-content {
+        width: calc(100% - 80px);
+        margin-left: 80px;
+    }
+
+    .timeline-item:nth-child(odd) .timeline-content,
+    .timeline-item:nth-child(even) .timeline-content {
+        left: 0;
+        text-align: left;
+    }
+} */
+
+
+
+/******* QUE FAIRE ********/
+
+/* .voyage {
+    display: flex;
+    justify-content: space-around;
+    
+} */
+
+/* .quefaire {
+    text-align: center;
+    margin-top: 170px;
+} */
+
+/* .container {
+    background-color: #7fb37e;
+} */
+
+/* .container h3 {
+    font-size: 1.5em;
+    text-align: center;
+    padding: 12px;
+} */
+
+/* 
+.imagesQueFaire {
+    width: 280px;
+    height: 250px;
+}
+
+
+.imagesQueFaire img {
+    width: 100%;
+} */
+
+/* 
+.buttonQueFaire {
+    width: 170px;
+    margin: 12px 68px;
+    background-color: rgba(4, 62, 38, 0.6);
+}
+
+.buttonQueFaire a {
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    font-size: 0.8em;
+    color: #fff;
+} */
+
+
+
+
+
+    /******** ITINERAIRE & LOGEMENT ********/
+
+    /* .voyage {
+        display: flex;
+        flex-direction: column;
+        margin: 12px auto;
+    }
+    
+    .voyage .bx {
+        display: block;
+        font-size: 3em;
+        text-align: center;
+        padding: 8px;
+        margin-top: 30px;
+    }
+
+    .voyage h3 {
+        font-size: 1.5em;
+        text-align: center;
+        padding: 8px;
+    }
+
+    .voyage p {
+        font-size: 1.2em;
+        text-align: center;
+        padding: 18px;
+    }
+     */
+/*      
+    .voyage .imagesQueFaire {
+        width: 420px;
+        height: 280px;
+        margin-bottom: 10px;
+        margin: auto;
+        padding: 0px 18px;
+    }
+
+    .voyage .buttonQueFaire {
+        display: block;
+        width: 150px;
+        margin: 8px auto;
+        padding: 8px;
+        background-color: rgba(4, 62, 38, 0.6);
+    }
+
+    .voyage .buttonQueFaire a {
+        font-family: 'Poppins', sans-serif;
+        text-align: center;
+        font-size: 0.7em;
+        color: #fff;
+    }
+
+    .infos {
+        font-size: 1.2em;
+        text-align: center;
+        padding: 16px 10px;
+        margin: 42px 0px;
+        background-color: rgba(4, 62, 38, 0.2) ;
+    }
+
+    .bxs-hotel {
+        display: block;
+        font-size: 4em;
+        text-align: center;
+        padding: 12px;
+        margin-bottom: 12px;
+    }
+
+    .accomodation .imagesQueFaire {
+        width: 420px;
+        height: 280px;
+        margin-bottom: 20px;
+        margin: 15px auto;
+    }
+
+    .accomodation .imagesQueFaire img {
+        width: 100%;
+    } 
+
+    .activites .imagesQueFaire {
+        width: 420px;
+        height: 280px;
+    }
+    
+    .activites .imagesQueFaire img {
+        width: 100%;
+    } 
+    
+    .activites {
+        margin-bottom: 80px;
+    }
+ */
+
+
+
+/* ***************** FAQ  *************** */
+/* .faq-title {
+    margin: 60px 0px 20px 0px;
+} */
+
+
+.quizz {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: auto;
+
+    /* width: 310px; */
+
+}
+
+.questions {
+    padding: 5px;
+    margin: 10px;
+    width: 380px;
+
+    width: 310px;
+}
+
+
+.questions h3 {
+    font-size: 1.2em;
+    text-align: center;
+    margin: auto;
+    padding: 8px;
+
+}
+
+.panel {
+    text-align: center;
+    font-size: 0.8em;
+    width: 280px;
+
+
+}
+
+/****** LIGNE ET MESSAGE ******/
+
+.ligne {
+    width: 45%;
+    height: 2px;
+    margin: 50px auto;
+    border-radius: 195px;
+    background-color: #000
+}
+
+.seeyou {
+    /* margin: auto; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* width: 410px;
+
+    width: 310px; */
+}
+
+.bye1 {
+    font-family: 'Dancing Script', cursive;
+    font-size: 2.1em;
+    text-align: center;
+    padding: 125px 3px 15px 3px;
+    color: #fff;
+
+}
+
+.bye2 {
+    font-family: 'Dancing Script', cursive;
+    font-size: 1.9em;
+    text-align: center;
+    padding: 5px;
+    color: #fff;
+}
+
+
+
+
+/**************** FOOTER  **********************/
+footer {
+    margin-top: 70px;
+    background-color: rgb(244, 243, 243);
+    padding-top: 12px;
+
+    /* width: 310px;
+    width: 100%; */
+
+}
+
+.termes {
+    display: flex;
+    justify-content: space-around;
+    margin: 10px auto 0px auto;
+    padding: 8px 3px;
+    width: 350px;
+    text-align: center;
+    font-size: 0.8em;
+
+}
+
+
+#copyright {
+    width: 350px;
+    color: #000;
+    text-align: center;
+    font-size: 0.8em;
+    margin: auto;
+}
+
+}
+
+/* *************************************** */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/***************** TABLETTE ****************/
+
+/*************** NAVBAR ****************/
+
+
+
+/****** NAVBAR ******/
+
+@media only screen and (min-width:768px) {
+
+    h2 {
+        font-size: 3em;
+        margin: 30px 0px 20px 0px;
+    }
+
+    header {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        overflow: hidden;
+        height: 85px;
+        background-color: #fff;
+        z-index: 100;
+    }
+
+
+    #logo {
+        width: 130px;
+        height: 130px;
+        border-radius: 50%;
+        margin: -25px auto 1px auto;
+    }
+    
+    #logo img {
+        width: 100%;
+        height: 100%;
+        border-radius: 50%;
+    }
+
+    nav .left,
+    nav .right {
+        position: fixed;
+        left: -100%;
+        top: 25px;
+        gap: 0;
+        display: flex;
+        flex-direction: column;
+        background-color: #fff;
+        width: 35%;
+        height: 100%;
+        text-align: center;
+        transition: 0.3s;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
+
+    nav .left ul, 
+    nav .right ul {
+        display: flex;
+        flex-direction: column;
+        gap: 0;
+    }
+    
+    nav .left ul {
+        display: flex;
+        justify-content: center;
+        margin-left: 0px;
+    }
+    
+    nav .right ul {
+        display: flex;
+        justify-content: center;
+        margin-left: 0px;
+    }
+
+    .left ul li, .right ul li {
+        padding: 8px 0;
+
+    }
+
+    .left ul li a, .right ul li a {
+        padding: 8px 0;
+        border-bottom: 1px solid goldenrod;
+    }
+
+
+    nav .left {
+        top: 25px;
+    }
+
+    nav .right {
+        top: 185px;
+    }
+
+    nav .left.active, nav .right.active {
+        left: 0px;
+    }
+
+
+    .hamburger {
+        display: block;
+        margin-top: -36px;
+        padding: 12px; 
+    }
+
+    .hamburger.active .bar:nth-child(2) {
+        opacity: 0;
+    }
+
+    .hamburger.active .bar:nth-child(1) {
+        transform: translateY(8px) rotate(45deg);
+    }
+
+    .hamburger.active .bar:nth-child(3) {
+        transform: translateY(-8px) rotate(-45deg);
+    }
+
+
+
+
+/*************** PARTIE PRINCIPALE *************/
+
+    .principale {
+        background: url(/images/GradiNo_Proposal.jpg) no-repeat fixed 50% 50%;
+        background-size: cover;
+        height: 699px;
+        position: relative;
+    }
+
+    .principale p {
+        font-family: 'Dancing Script', cursive;
+        text-align: center;
+        font-size: 4.5em;
+        color: #fff;
+        padding-top: 150px;
+    }
+
+    .saveDate {
+        display: flex;
+        justify-content: center;
+        background-color: #fff;
+        width: 290px;
+        margin: auto;
+        border-radius: 32px;
+    }
+
+    .saveDate p {
+        font-family: 'Poppins', sans-serif;
+        text-align: center;
+        color: #000;
+        font-size: 0.9em;
+        margin: 10px 12px;
+        padding: 0;
+    }
+
+    .saveDate p span {
+        display: block;
+        width: 90px;
+    }
+
+    .saveDate .traitVertical {
+        height: 50px;
+        width: 1px;
+        background-color: #000;
+        margin: 18px;
+    }
+
+    #countdown {
+        display: flex;
+        justify-content: center;
+        gap: 10px;
+        padding: 20px;
+        margin-top: 50px;
+    
+    }
+
+    .timer {
+        width: 100px;
+        padding: 20px;
+        text-align: center;
+    }
+
+    .value {
+        display: block;
+        font-weight: 700;
+        font-size: 1.5em;
+        color: #fff;
+        border-radius: 18px;
+        padding: 8px;
+    }
+
+    .label {
+        display: block;
+        text-transform: uppercase;
+        font-size: 0.9em;
+        text-align: center;
+        padding-top: 6px;
+        color: #fff;
+    }
+
+
+    /******** Notre histoire ******/
+
+    
+    .histoire {
+        display: flex;
+        flex-direction: column;
+    
+    }
+
+    .imageStory {
+        width: 540px;
+        margin: 10px auto;
+    }
+
+    img {
+        width: 100%;
+        height: 100%;
+    }
+    
+    .story {
+        width: 540px;
+        margin: auto;
+        font-size: 1em;
+        text-align: center;
+        font-family: "Cormorant Garamond", serif;
+        font-weight: 300;
+        font-style: normal;
+        color: black;
+        position: relative;
+        z-index: 5;
+    }
+    
+    .notrehistoire {
+        margin: 15px 5px;
+        position: relative;
+        z-index: 5;
+    }
+
+
+
+    /******** INVITATION ET SONDAGE *******/
+
+
+    .sondages {
+        background: url(/images/GradiNo_Proposal_bis.jpg) no-repeat fixed 50% 50%;
+        height: 310px;
+        background-size: cover;
+        margin: 0px auto 40px auto;
+        /* padding: 10px; */
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+
+
+    .invitation {
+        font-family: "Playwrite DE Grund", cursive;
+        font-optical-sizing: auto;
+        font-weight: 400;
+        font-style: normal;
+        color: #fff;
+        font-size: 2em;
+        text-align: center;
+        padding: 8px 0px 30px 0px;
+    }
+
+
+    .questionnaire a {
+        display: block;
+        width: 210px;
+        border-radius: 28px;
+        font-size: 1.3em;
+        padding: 22px 0px;
+        
+    }
+
+
+
+/****************** PROGRAMME **********************/
+
+.details {
+    font-family: "Playwrite DE Grund", cursive;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    color: #000;
+    font-size: 1.3em;
+    text-align: center;
+    padding: 6px;
+    margin-bottom: 10px;
+}
+
+.programme {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(244, 243, 243);
+    height: 410px;
+}
+
+
+.programme .bx-low-vision {
+    display: block;
+    font-size: 4em;
+    color: #000;   
+    
+}
+
+.programme .bx-low-vision:hover {
+    opacity: 0.2;
+    scale: 1;
+}
+
+
+
+/*
+.programme .imageProgramme {
+    width: 628.5px;
+    height: 830px;
+
+}
+
+.programme .imageProgramme img {
+    width: 100%;
+}
+
+.container {
+    width: 350px;
+    height: 480px;
+    margin: 0px 25px;
+    margin: auto;
+    padding: 270px 30px; 
+    
+}
+
+
+
+/* .programme .detailsProgramme {
+  
+    margin: 50px 0px;
+} */
+
+
+/* .programme .detailsProgramme p {
+    text-align: center;
+    font-size: 1.5em;
+    margin: 30px 0px;
+    padding: 18px;
+
+} */
+
+/* .titreProgramme {
+    font-family: "Gowun Batang", serif;
+    font-weight: 400;
+    font-style: normal;
+    text-align: center;
+    color: #000;
+    font-size: 3em;
+    margin: 10px 0px 20px 0px;
+} */
+
+
+/* .programmeTop {
+    text-align: center;
+    margin-top: 180px;
+}
+
+.programmeBottom {
+    text-align: center;
+    margin-bottom: 290px;
+} */
+
+
+/* #details {
+    margin: 50px 0px;
+} */
+
+
+
+
+
+/******* QUE FAIRE ********/
+
+/* .voyage {
+    display: flex;
+    justify-content: space-around;
+    
+} */
+
+/* .quefaire {
+    text-align: center;
+    margin-top: 170px;
+} */
+
+/* .container {
+    background-color: #7fb37e;
+} */
+
+/* .container h3 {
+    font-size: 1.5em;
+    text-align: center;
+    padding: 12px;
+} */
+
+/* 
+.imagesQueFaire {
+    width: 280px;
+    height: 250px;
+}
+
+
+.imagesQueFaire img {
+    width: 100%;
+} */
+
+/* 
+.buttonQueFaire {
+    width: 170px;
+    margin: 12px 68px;
+    background-color: rgba(4, 62, 38, 0.6);
+}
+
+.buttonQueFaire a {
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    font-size: 0.8em;
+    color: #fff;
+} */
+
+
+
+
+
+    /******** ITINERAIRE & LOGEMENT ********/
+
+    /* .voyage {
+        display: flex;
+        flex-direction: column;
+        margin: 12px auto;
+    }
+    
+    .voyage .bx {
+        display: block;
+        font-size: 3em;
+        text-align: center;
+        padding: 8px;
+        margin-top: 30px;
+    }
+
+    .voyage h3 {
+        font-size: 1.5em;
+        text-align: center;
+        padding: 8px;
+    }
+
+    .voyage p {
+        font-size: 1.2em;
+        text-align: center;
+        padding: 18px;
+    }
+     */
+/*      
+    .voyage .imagesQueFaire {
+        width: 420px;
+        height: 280px;
+        margin-bottom: 10px;
+        margin: auto;
+        padding: 0px 18px;
+    }
+
+    .voyage .buttonQueFaire {
+        display: block;
+        width: 150px;
+        margin: 8px auto;
+        padding: 8px;
+        background-color: rgba(4, 62, 38, 0.6);
+    }
+
+    .voyage .buttonQueFaire a {
+        font-family: 'Poppins', sans-serif;
+        text-align: center;
+        font-size: 0.7em;
+        color: #fff;
+    }
+
+    .infos {
+        font-size: 1.2em;
+        text-align: center;
+        padding: 16px 10px;
+        margin: 42px 0px;
+        background-color: rgba(4, 62, 38, 0.2) ;
+    }
+
+    .bxs-hotel {
+        display: block;
+        font-size: 4em;
+        text-align: center;
+        padding: 12px;
+        margin-bottom: 12px;
+    }
+
+    .accomodation .imagesQueFaire {
+        width: 420px;
+        height: 280px;
+        margin-bottom: 20px;
+        margin: 15px auto;
+    }
+
+    .accomodation .imagesQueFaire img {
+        width: 100%;
+    } 
+
+    .activites .imagesQueFaire {
+        width: 420px;
+        height: 280px;
+    }
+    
+    .activites .imagesQueFaire img {
+        width: 100%;
+    } 
+    
+    .activites {
+        margin-bottom: 80px;
+    }
+ */
+
+
+
+/* ***************** FAQ  *************** */
+/* .faq-title {
+    margin: 60px 0px 20px 0px;
+} */
+
+
+.quizz {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.questions {
+    padding: 5px 24px;
+    margin: 10px;
+}
+
+
+.questions h3 {
+    font-size: 1.8em;
+    text-align: center;
+    margin: auto;
+    padding: 8px;
+}
+
+.panel {
+    text-align: center;
+    font-size: 1.15em;
+}
+
+/****** LIGNE ET MESSAGE ******/
+
+.ligne {
+    width: 45%;
+    height: 2px;
+    margin: 50px auto;
+    border-radius: 195px;
+    background-color: #000
+}
+
+.seeyou {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 470px;
+}
+
+
+
+.bye1 {
+    font-family: 'Dancing Script', cursive;
+    font-size: 3.5em;
+    text-align: center;
+    padding: 8px 3px 15px 3px;
+    color: #fff;
+
+}
+
+.bye2 {
+    font-family: 'Dancing Script', cursive;
+    font-size: 2.8em;
+    text-align: center;
+    padding: 5px;
+    color: #fff;
+}
+
+
+
+/**************** FOOTER  **********************/
+footer {
+    margin-top: 90px;
+    background-color: rgb(244, 243, 243);
+    padding-top: 12px;
+    overflow: hidden;
+}
+
+.termes {
+    display: flex;
+    justify-content: space-around;
+    margin: 0px auto;
+    padding: 8px 3px;
+    text-align: center;
+    font-size: 1.2em;
+    overflow: hidden;
+}
+
+
+#copyright {
+    color: #000;
+    text-align: center;
+    font-size: 1em;
+    overflow: hidden;
+    margin: auto;
+    padding: 2px;
+}
+
+}
+
+
+
+
+
+/***************** TABLETTE ****************/
+
+/*************** NAVBAR ****************/
+
+
+
+/****** NAVBAR ******/
+
+@media only screen and (min-width:922px) {
+
+    h2 {
+        font-size: 3em;
+        margin: 30px 0px 20px 0px;
+    }
+
+    header {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        overflow: hidden;
+        height: 105px;
+        background-color: #fff;
+        z-index: 100;
+    }
+
+
+    #logo {
+        width: 150px;
+        height: 150px;
+        border-radius: 50%;
+        margin: -25px auto 1px auto;
+    }
+    
+    #logo img {
+        width: 100%;
+        height: 100%;
+        border-radius: 50%;
+    }
+
+
+
+    nav .left,
+    nav .right {
+        position: fixed;
+        top: 25px;
+        gap: 0;
+        display: flex;
+        flex-direction: column;
+        background-color: #fff;
+        width: 35%;
+        /* height: 100%; */
+        text-align: center;
+        transition: 0.3s;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
+
+    nav .left ul, 
+    nav .right ul {
+        display: flex;
+        flex-direction: column;
+        gap: 0;
+    }
+    
+    nav .left ul {
+        display: flex;
+        justify-content: center;
+        margin-left: 0px;
+    }
+    
+    nav .right ul {
+        display: flex;
+        justify-content: center;
+        margin-left: 0px;
+    } 
+
+    .left ul li, .right ul li {
+        padding: 8px 0;
+
+    }
+
+    .left ul li a, .right ul li a {
+        padding: 8px 0;
+        border-bottom: 1px solid goldenrod;
+    }
+
+
+    nav .left {
+        top: 25px;
+    }
+
+    nav .right {
+        top: 185px;
+    }
+
+    /* nav .left.active, nav .right.active {
+        left: 0px;
+    } */
+
+
+    .hamburger {
+        display: block;
+        margin-top: -36px;
+        padding: 12px; 
+    }
+
+
+
+
+/*************** PARTIE PRINCIPALE *************/
+
+    .principale {
+        background: url(/images/GradiNo_Proposal.jpg) no-repeat fixed 50% 50%;
+        background-size: cover;
+        height: 699px;
+        position: relative;
+    }
+
+    .principale p {
+        font-family: 'Dancing Script', cursive;
+        text-align: center;
+        font-size: 5em;
+        color: #fff;
+        padding-top: 150px;
+    }
+
+    .saveDate {
+        display: flex;
+        justify-content: center;
+        background-color: #fff;
+        width: 320px;
+        margin: auto;
+        border-radius: 32px;
+    }
+
+    .saveDate p {
+        font-family: 'Poppins', sans-serif;
+        text-align: center;
+        color: #000;
+        font-size: 1.2em;
+        margin: 10px 12px;
+        padding: 0;
+    }
+
+    .saveDate p span {
+        display: block;
+        width: 90px;
+    }
+
+    .saveDate .traitVertical {
+        height: 70px;
+        width: 1px;
+        background-color: #000;
+        margin: 18px;
+    }
+
+    #countdown {
+        display: flex;
+        justify-content: center;
+        gap: 10px;
+        padding: 20px;
+        margin-top: 50px;
+    
+    }
+
+    .timer {
+        width: 150px;
+        padding: 20px;
+        text-align: center;
+    }
+
+    .value {
+        display: block;
+        font-weight: 700;
+        font-size: 1.8em;
+        color: #fff;
+        border-radius: 18px;
+        padding: 8px;
+    }
+
+    .label {
+        display: block;
+        text-transform: uppercase;
+        font-size: 1.3em;
+        text-align: center;
+        padding-top: 6px;
+        color: #fff;
+    }
+
+
+    /******** Notre histoire ******/
+
+    
+    .histoire {
+        display: flex;
+        flex-direction: column;
+    
+    }
+
+    .imageStory {
+        width: 540px;
+        margin: 10px auto;
+    }
+
+    img {
+        width: 100%;
+        height: 100%;
+    }
+    
+    .story {
+        width: 540px;
+        margin: auto;
+        font-size: 1em;
+        text-align: center;
+        font-family: "Cormorant Garamond", serif;
+        font-weight: 300;
+        font-style: normal;
+        color: black;
+        position: relative;
+        z-index: 5;
+    }
+    
+    .notrehistoire {
+        margin: 15px 5px;
+        position: relative;
+        z-index: 5;
+    }
+
+
+
+    /******** INVITATION ET SONDAGE *******/
+
+
+    .sondages {
+        background: url(/images/GradiNo_Proposal_bis.jpg) no-repeat fixed 50% 50%;
+        height: 390px;
+        background-size: cover;
+        margin: 0px auto 40px auto;
+        /* padding: 10px; */
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+
+
+    .invitation {
+        font-family: "Playwrite DE Grund", cursive;
+        font-optical-sizing: auto;
+        font-weight: 400;
+        font-style: normal;
+        color: #fff;
+        font-size: 2.4em;
+        text-align: center;
+        padding: 8px 0px 30px 0px;
+    }
+
+
+    .questionnaire a {
+        display: block;
+        width: 210px;
+        border-radius: 28px;
+        font-size: 1.3em;
+        padding: 22px 0px;
+        
+    }
+
+
+
+/****************** PROGRAMME **********************/
+
+.details {
+    font-family: "Playwrite DE Grund", cursive;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    color: #000;
+    font-size: 1.5em;
+    text-align: center;
+    padding: 6px;
+    margin-bottom: 10px;
+}
+
+.programme {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(244, 243, 243);
+    height: 410px;
+}
+
+
+.programme .bx-low-vision {
+    display: block;
+    font-size: 4.5em;
+    color: #000;   
+    
+}
+
+.programme .bx-low-vision:hover {
+    opacity: 0.2;
+    scale: 1;
+}
+
+
+
+/*
+.programme .imageProgramme {
+    width: 628.5px;
+    height: 830px;
+
+}
+
+.programme .imageProgramme img {
+    width: 100%;
+}
+
+.container {
+    width: 350px;
+    height: 480px;
+    margin: 0px 25px;
+    margin: auto;
+    padding: 270px 30px; 
+    
+}
+
+
+
+/* .programme .detailsProgramme {
+  
+    margin: 50px 0px;
+} */
+
+
+/* .programme .detailsProgramme p {
+    text-align: center;
+    font-size: 1.5em;
+    margin: 30px 0px;
+    padding: 18px;
+
+} */
+
+/* .titreProgramme {
+    font-family: "Gowun Batang", serif;
+    font-weight: 400;
+    font-style: normal;
+    text-align: center;
+    color: #000;
+    font-size: 3em;
+    margin: 10px 0px 20px 0px;
+} */
+
+
+/* .programmeTop {
+    text-align: center;
+    margin-top: 180px;
+}
+
+.programmeBottom {
+    text-align: center;
+    margin-bottom: 290px;
+} */
+
+
+/* #details {
+    margin: 50px 0px;
+} */
+
+
+
+
+
+/******* QUE FAIRE ********/
+
+/* .voyage {
+    display: flex;
+    justify-content: space-around;
+    
+} */
+
+/* .quefaire {
+    text-align: center;
+    margin-top: 170px;
+} */
+
+/* .container {
+    background-color: #7fb37e;
+} */
+
+/* .container h3 {
+    font-size: 1.5em;
+    text-align: center;
+    padding: 12px;
+} */
+
+/* 
+.imagesQueFaire {
+    width: 280px;
+    height: 250px;
+}
+
+
+.imagesQueFaire img {
+    width: 100%;
+} */
+
+/* 
+.buttonQueFaire {
+    width: 170px;
+    margin: 12px 68px;
+    background-color: rgba(4, 62, 38, 0.6);
+}
+
+.buttonQueFaire a {
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    font-size: 0.8em;
+    color: #fff;
+} */
+
+
+
+
+
+    /******** ITINERAIRE & LOGEMENT ********/
+
+    /* .voyage {
+        display: flex;
+        flex-direction: column;
+        margin: 12px auto;
+    }
+    
+    .voyage .bx {
+        display: block;
+        font-size: 3em;
+        text-align: center;
+        padding: 8px;
+        margin-top: 30px;
+    }
+
+    .voyage h3 {
+        font-size: 1.5em;
+        text-align: center;
+        padding: 8px;
+    }
+
+    .voyage p {
+        font-size: 1.2em;
+        text-align: center;
+        padding: 18px;
+    }
+     */
+/*      
+    .voyage .imagesQueFaire {
+        width: 420px;
+        height: 280px;
+        margin-bottom: 10px;
+        margin: auto;
+        padding: 0px 18px;
+    }
+
+    .voyage .buttonQueFaire {
+        display: block;
+        width: 150px;
+        margin: 8px auto;
+        padding: 8px;
+        background-color: rgba(4, 62, 38, 0.6);
+    }
+
+    .voyage .buttonQueFaire a {
+        font-family: 'Poppins', sans-serif;
+        text-align: center;
+        font-size: 0.7em;
+        color: #fff;
+    }
+
+    .infos {
+        font-size: 1.2em;
+        text-align: center;
+        padding: 16px 10px;
+        margin: 42px 0px;
+        background-color: rgba(4, 62, 38, 0.2) ;
+    }
+
+    .bxs-hotel {
+        display: block;
+        font-size: 4em;
+        text-align: center;
+        padding: 12px;
+        margin-bottom: 12px;
+    }
+
+    .accomodation .imagesQueFaire {
+        width: 420px;
+        height: 280px;
+        margin-bottom: 20px;
+        margin: 15px auto;
+    }
+
+    .accomodation .imagesQueFaire img {
+        width: 100%;
+    } 
+
+    .activites .imagesQueFaire {
+        width: 420px;
+        height: 280px;
+    }
+    
+    .activites .imagesQueFaire img {
+        width: 100%;
+    } 
+    
+    .activites {
+        margin-bottom: 80px;
+    }
+ */
+
+
+
+/* ***************** FAQ  *************** */
+/* .faq-title {
+    margin: 60px 0px 20px 0px;
+} */
+
+
+.quizz {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.questions {
+    padding: 5px 24px;
+    margin: 10px;
+}
+
+
+.questions h3 {
+    font-size: 1.8em;
+    text-align: center;
+    margin: auto;
+    padding: 8px;
+}
+
+.panel {
+    text-align: center;
+    font-size: 1.15em;
+}
+
+/****** LIGNE ET MESSAGE ******/
+
+.ligne {
+    width: 45%;
+    height: 2px;
+    margin: 50px auto;
+    border-radius: 195px;
+    background-color: #000
+}
+
+.seeyou {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 470px;
+}
+
+
+
+.bye1 {
+    font-family: 'Dancing Script', cursive;
+    font-size: 3.5em;
+    text-align: center;
+    padding: 8px 3px 15px 3px;
+    color: #fff;
+
+}
+
+.bye2 {
+    font-family: 'Dancing Script', cursive;
+    font-size: 2.8em;
+    text-align: center;
+    padding: 5px;
+    color: #fff;
+}
+
+
+
+/**************** FOOTER  **********************/
+footer {
+    margin-top: 90px;
+    background-color: rgb(244, 243, 243);
+    padding-top: 12px;
+    overflow: hidden;
+}
+
+.termes {
+    display: flex;
+    justify-content: space-around;
+    margin: 0px auto;
+    padding: 8px 3px;
+    text-align: center;
+    font-size: 1.2em;
+    overflow: hidden;
+}
+
+
+#copyright {
+    color: #000;
+    text-align: center;
+    font-size: 1em;
+    overflow: hidden;
+    margin: auto;
+    padding: 2px;
+}
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/***************** TABLETTE ****************/
+
+/*************** NAVBAR ****************/
+
+/* @media screen and (min-width:768px) { */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/************* CONNEXION ************/
+
+.login-container {
+    background-color: #ffffff;
+    padding: 20px;
+    /* border-radius: 8px; */
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    width: 300px;
+}
+
+.login-form h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    color: #555;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+
+
+
+
+
