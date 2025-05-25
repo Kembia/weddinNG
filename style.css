@@ -1101,6 +1101,7 @@ button:hover {
     color: #000;
     text-align: center;
     font-size: 1em;
+    padding: 3px;
 }
 
 #icons {
@@ -2011,6 +2012,7 @@ button:hover {
     color: #000;
     text-align: center;
     font-size: 0.8em;
+    padding: 3px;
 }
 
 }
@@ -2717,7 +2719,7 @@ button:hover {
 
 
 .questions h3 {
-    font-size: 1.2em;
+    font-size: 1.1em;
     text-align: center;
     margin: auto;
     padding: 8px;
@@ -2802,6 +2804,7 @@ footer {
     text-align: center;
     font-size: 0.8em;
     margin: auto;
+    padding: 3px;
 }
 
 }
@@ -3449,7 +3452,7 @@ footer {
     font-size: 1em;
     overflow: hidden;
     margin: auto;
-    padding: 2px;
+    padding: 3px;
 }
 
 }
@@ -4075,7 +4078,7 @@ footer {
     font-size: 1em;
     overflow: hidden;
     margin: auto;
-    padding: 2px;
+    padding: 3px;
 }
 
 }
